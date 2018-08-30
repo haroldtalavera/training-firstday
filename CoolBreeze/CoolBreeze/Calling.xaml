@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Appearing="ContentPage_Appearing"
+             x:Class="CoolBreeze.Calling" BackgroundColor="#333">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image x:Name="ImageCall" VerticalOptions="CenterAndExpand"></Image>
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="LabelCall" Text="Calling..." FontSize="30" HorizontalOptions="Center" TextColor="#ccc"  VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="LabelName" FontSize="50" HorizontalOptions="Center" TextColor="#fff" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="LabelNumber" FontSize="20" HorizontalOptions="Center" TextColor="#ccc" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

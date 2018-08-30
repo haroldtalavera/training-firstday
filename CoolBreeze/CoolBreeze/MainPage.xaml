@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CoolBreeze" BackgroundColor="#333"
+             x:Class="CoolBreeze.MainPage">
+
+    <StackLayout>
+        <StackLayout>
+        </StackLayout>
+        <StackLayout>
+            <Grid RowSpacing="10" ColumnSpacing="10" Padding="40">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="LabelNumber" FontSize="40" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="#fff" Grid.Row="0" Grid.ColumnSpan="3" VerticalOptions="CenterAndExpand" Clicked="LabelNumber_Clicked" />
+                <Button x:Name="Button1" Text="1" BorderRadius="30" BackgroundColor="#fff" Grid.Row="1" Grid.Column="0" Clicked="Button1_Clicked"></Button>
+                <Button x:Name="Button2" Text="2" BorderRadius="30" BackgroundColor="#fff" Grid.Row="1" Grid.Column="1" Clicked="Button2_Clicked"></Button>
+                <Button x:Name="Button3" Text="3" BorderRadius="30" BackgroundColor="#fff" Grid.Row="1" Grid.Column="2" Clicked="Button3_Clicked"></Button>
+                <Button x:Name="Button4" Text="4" BorderRadius="30" BackgroundColor="#fff" Grid.Row="2" Grid.Column="0" Clicked="Button4_Clicked"></Button>
+                <Button x:Name="Button5" Text="5" BorderRadius="30" BackgroundColor="#fff" Grid.Row="2" Grid.Column="1" Clicked="Button5_Clicked"></Button>
+                <Button x:Name="Button6" Text="6" BorderRadius="30" BackgroundColor="#fff" Grid.Row="2" Grid.Column="2" Clicked="Button6_Clicked"></Button>
+                <Button x:Name="Button7" Text="7" BorderRadius="30" BackgroundColor="#fff" Grid.Row="3" Grid.Column="0" Clicked="Button7_Clicked"></Button>
+                <Button x:Name="Button8" Text="8" BorderRadius="30" BackgroundColor="#fff" Grid.Row="3" Grid.Column="1" Clicked="Button8_Clicked"></Button>
+                <Button x:Name="Button9" Text="9" BorderRadius="30" BackgroundColor="#fff" Grid.Row="3" Grid.Column="2" Clicked="Button9_Clicked"></Button>
+                <Button x:Name="Button0" Text="0" BorderRadius="30" BackgroundColor="#fff" Grid.Row="4" Grid.Column="1" Clicked="Button0_Clicked"></Button>
+                <Button x:Name="ButtonDial" Text="Dial" BorderRadius="30" BackgroundColor="#96ca2d" Grid.Row="5" Grid.ColumnSpan="3" Clicked="ButtonDial_Clicked"></Button>
+                <Button x:Name="ButtonContacts" FontSize="18" TextColor="#ccc" Text="Contacts" BackgroundColor="Transparent" Grid.Row="6" Grid.ColumnSpan="3" Clicked="ButtonContacts_Clicked"></Button>
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

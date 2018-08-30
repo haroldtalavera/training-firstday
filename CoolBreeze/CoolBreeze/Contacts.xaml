@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoolBreeze.Contacts" BackgroundColor="#333">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Phone Contacts" FontSize="34" TextColor="#fff" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Grid RowSpacing="5" ColumnSpacing="5" Padding="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Font Size: " FontSize="24" TextColor="#fff" Grid.Row="0" Grid.Column="0" />
+                    <Label Text="{Binding Source={x:Reference SliderFont}, Path=Value}" FontSize="24" TextColor="#ccc" Grid.Row="0" Grid.Column="1" />
+                </Grid>
+            </StackLayout>
+            <StackLayout>
+                <Slider x:Name="SliderFont" Maximum="20" Minimum="10"/>
+            </StackLayout>
+            <StackLayout>
+                <Grid ColumnSpacing="1" Padding="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="LabelName" TextColor="#ccc" FontAttributes="Bold" Text="Name" Grid.Row="0" Grid.Column="0"></Label>
+                    <Label x:Name="LabelNumber" TextColor="#ccc" FontAttributes="Bold" Text="Contact Number" Grid.Row="0" Grid.Column="1"></Label>
+                    <Button x:Name="ButtonJames" TextColor="#fff" HorizontalOptions="StartAndExpand"  Text="James Yap" FontSize="{Binding Source={x:Reference SliderFont}, Path=Value}"  BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Clicked="ButtonJames_Clicked"></Button>
+                    <Button x:Name="ButtonJamesNumber" TextColor="#fff" HorizontalOptions="StartAndExpand" Text="09201234567" FontSize="{Binding Source={x:Reference SliderFont}, Path=Value}" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="1" Clicked="ButtonJamesNumber_Clicked"></Button>
+                    <Button x:Name="ButtonKobe" TextColor="#fff" HorizontalOptions="StartAndExpand"  Text="Kobe Bryant" FontSize="{Binding Source={x:Reference SliderFont}, Path=Value}" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" Clicked="ButtonKobe_Clicked"></Button>
+                    <Button x:Name="ButtonKobeNumber" TextColor="#fff" HorizontalOptions="StartAndExpand" Text="09181234567" FontSize="{Binding Source={x:Reference SliderFont}, Path=Value}" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="1" Clicked="ButtonKobeNumber_Clicked"></Button>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
